@@ -77,7 +77,7 @@ public int GlowsHandler(Menu menu, MenuAction action, int client, int selection)
 
 public bool EquipGlow(int client, Glows eg)
 {
-	Glow_SetupEx(client, eg.Color, eg.Style, eg.MaxDist, true, false);
+	Glow_SetupEx(client, eg.Color, eg.Style, eg.MaxDist, false);
 	PrintToChat(client, "You have equipped the \x04%s \x01Glow!", eg.Name);
 }
 
